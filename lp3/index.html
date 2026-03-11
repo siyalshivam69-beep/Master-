@@ -1,12 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Daily Free Trading Calls</title>
 
 <!-- Meta Pixel Code -->
@@ -17,18 +14,23 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+s.parentNode.insertBefore(t,s)}
+(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('set','autoConfig',false,'1846740405978927');
-fbq('init', '1846740405978927');
-fbq('track', 'PageView');
+fbq('init','1846740405978927');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1846740405978927&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1846740405978927&ev=PageView&noscript=1"/>
+</noscript>
 
 <style>
+
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
@@ -39,18 +41,22 @@ justify-content:center;
 align-items:center;
 min-height:100vh;
 color:white;
+padding:20px;
 }
 
+/* CARD */
+
 .container{
-width:360px;
-padding:20px;
+width:100%;
+max-width:360px;
+padding:22px;
 border-radius:16px;
 background:#111;
 border:1px solid #333;
 text-align:center;
 }
 
-/* ROUND LOGO */
+/* LOGO */
 
 .logo img{
 width:80px;
@@ -58,6 +64,7 @@ height:80px;
 border-radius:50%;
 margin-bottom:12px;
 border:3px solid white;
+object-fit:cover;
 }
 
 h1{
@@ -70,6 +77,8 @@ color:#FFD700;
 margin-top:8px;
 font-size:14px;
 }
+
+/* TELEGRAM BUTTON */
 
 .telegram{
 margin-top:20px;
@@ -84,6 +93,8 @@ font-size:16px;
 pointer-events:none;
 opacity:0.6;
 }
+
+/* FEATURES */
 
 .features{
 margin-top:20px;
@@ -101,6 +112,8 @@ margin-top:10px;
 font-weight:bold;
 }
 
+/* AGENCY */
+
 .agency{
 margin-top:25px;
 background:linear-gradient(45deg,#6a5cff,#ff4ecd);
@@ -114,6 +127,8 @@ color:white;
 font-weight:bold;
 text-decoration:none;
 }
+
+/* DISCLAIMER */
 
 .disclaimer{
 margin-top:20px;
@@ -144,7 +159,6 @@ font-size:18px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -161,7 +175,7 @@ font-size:18px;
 PANKAJ BHARDWAJ ™
 </div>
 
-<a href="https://t.me/+yaH5bBiIAAVmODlk" class="telegram">
+<a href="https://t.me/+yaH5bBiIAAVmODlk" class="telegram" id="tgbtn">
 📩 JOIN TELEGRAM CHANNEL
 </a>
 
@@ -174,43 +188,37 @@ India's Best STOCK MARKET Channel
 </div>
 
 <p>✔ All Calls With Proper Stop Loss & Target</p>
-
 <p>✔ F&O Views For Study Purpose Only</p>
-
 <p>💰 Daily 5-7 Calls By Expert</p>
 
 </div>
 
 <div class="agency">
-
-🔥 Ads by  
+🔥 Ads by
 <a href="https://mahadevmarketing.co/" target="_blank">
 Mahadevmarketing
-</a>  
+</a>
 • Ads Agency 🚀
-
 </div>
 
 <div class="disclaimer">
-
-Disclaimer: This channel is created for educational purposes only.  
-We do not provide any investment advice or guarantee profits.  
-Trading in stock market involves risk. Please consult your financial advisor before investing.  
+Disclaimer: This channel is created for educational purposes only.
+We do not provide any investment advice or guarantee profits.
+Trading in stock market involves risk. Please consult your financial advisor before investing.
 We are not SEBI registered advisors. All information shared is for study purposes only.
-
 </div>
 
 </div>
 
-<div class="sticky">
-
+<div class="sticky" id="stickybtn">
 <a href="https://t.me/+yaH5bBiIAAVmODlk">
 🚀 JOIN FREE TELEGRAM NOW
 </a>
-
 </div>
 
 <script>
+
+/* BOT FILTER */
 
 let ua = navigator.userAgent.toLowerCase();
 let bots = ["bot","spider","crawl","facebook","preview","meta","python","curl","wget"];
@@ -221,15 +229,19 @@ document.body.innerHTML="";
 }
 }
 
+/* ENABLE BUTTON */
+
 function enableButtons(){
 
-document.querySelector(".telegram").style.pointerEvents="auto";
-document.querySelector(".telegram").style.opacity="1";
+document.getElementById("tgbtn").style.pointerEvents="auto";
+document.getElementById("tgbtn").style.opacity="1";
 
-document.querySelector(".sticky").style.pointerEvents="auto";
-document.querySelector(".sticky").style.opacity="1";
+document.getElementById("stickybtn").style.pointerEvents="auto";
+document.getElementById("stickybtn").style.opacity="1";
 
 }
+
+/* 3 SECOND DELAY */
 
 setTimeout(enableButtons,3000);
 
@@ -241,4 +253,3 @@ document.addEventListener("scroll", enableButtons);
 
 </body>
 </html>
-```
